@@ -13,7 +13,7 @@ export function UserContextProvider({ children }) {
     const token = localStorage.getItem('authToken'); // Get token from local storage
     if (token) {
       axios
-        .get('https://student-dashboard-8ca8.onrender.com', {
+        .get('https://student-dashboard-1-oz0y.onrender.com', {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then(({ data }) => {
