@@ -14,7 +14,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchProfileData = async () => {
       try {
-        const response = await axios.get("https://student-dashboard-8ca8.onrender.com/auth/profile", { withCredentials: true });
+        const response = await axios.get("https://student-dashboard-1-oz0y.onrender.com/profile", { withCredentials: true });
         setUser(response.data);
       } catch (err) {
         setError("Failed to fetch profile data");
