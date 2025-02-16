@@ -1,25 +1,4 @@
-/* eslint-disable react/prop-types */
-// import {createContext, useEffect, useState} from "react";
-// import axios from 'axios';
 
-
-// export const UserContext = createContext({});
-
-// export function UserContextProvider({children}){
-//   const [user, setUser ] = useState(null);
-//   useEffect(() => {
-//     if (!user) {
-//       axios.get('/profile').then(({data}) =>{
-//         setUser(data);
-//       })
-//     }
-//   },[]);
-//   return (
-//     <UserContext.Provider value={{user, setUser}}>
-//       {children}
-//     </UserContext.Provider>
-//   )
-// }
 import { createContext, useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -34,7 +13,7 @@ export function UserContextProvider({ children }) {
     const token = localStorage.getItem('authToken'); // Get token from local storage
     if (token) {
       axios
-        .get('http://localhost:4000/auth/profile', {
+        .get('https://student-dashboard-8ca8.onrender.com', {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then(({ data }) => {
