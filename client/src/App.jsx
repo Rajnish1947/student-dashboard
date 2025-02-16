@@ -12,7 +12,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 
 import CalendarView from "./pages/Dashboard";
 
-axios.defaults.baseURL = "https://student-dashboard-8ca8.onrender.com";
+axios.defaults.baseURL = "https://student-dashboard-1-oz0y.onrender.com";
 axios.defaults.withCredentials = true;
 
 function App() {
