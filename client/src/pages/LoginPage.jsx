@@ -21,7 +21,7 @@ export default function LoginPage() {
     try {
       // Send login credentials to the backend
       const response = await axios.post(
-        'https://student-dashboard-1-oz0y.onrender.com', // Adjust your backend endpoint if needed
+        'https://student-dashboard-8ca8.onrender.com/auth/login', // Adjust your backend endpoint if needed
         { email, password },
         { withCredentials: true }
       );
