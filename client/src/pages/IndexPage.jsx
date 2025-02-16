@@ -11,7 +11,7 @@ export default function IndexPage() {
 
   return (
     <>
-      <main className="flex flex-col md:flex-row items-center h-[calc(100vh-72px)] mx-6 md:mx-16">
+      <main className="flex flex-col md:flex-row items-center h-[calc(100vh-72px)] mx-6 my-5 md:mx-16">
         <div className="text-center md:text-left">
           <h1 className=" text-4xl md:text-[108px] leading-tight font-bold">
             Empower Your Future with the Best Education
