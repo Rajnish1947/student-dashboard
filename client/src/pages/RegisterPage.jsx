@@ -24,7 +24,7 @@ export default function RegisterPage() {
 
     try {
       const response = await axios.post(
-        'http://localhost:4000/auth/register',
+        'https://student-dashboard-8ca8.onrender.com',
         { name, email, password },
         { withCredentials: true }
       );
